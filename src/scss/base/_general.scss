@@ -1,0 +1,14 @@
+@import '../variables/fonts';
+@import '../functions/rem-calc';
+
+:root {
+  font-family: $font-family-red-hat-display;
+  background: #fff;
+  color: #000;
+  font-weight: 500;
+}
+
+body {
+  font-size: rem-calc(13);
+  line-height: rem-calc(17);
+}

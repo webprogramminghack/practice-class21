@@ -1,0 +1,58 @@
+.todoContainer {
+  margin: 0 auto;
+  width: rem-calc(400);
+
+  .newTodoInput {
+    border: 1px solid $black;
+    padding: rem-calc(4);
+    width: 100%;
+    border-radius: rem-calc(4);
+    margin: rem-calc(8) 0;
+  }
+
+  .todos {
+    li {
+      display: flex;
+      justify-content: space-between;
+
+      border-top: 1px solid $black;
+      padding: rem-calc(4);
+      gap: rem-calc(8);
+      align-items: center;
+
+      input {
+        padding: rem-calc(4);
+        width: 100%;
+        border: none;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      &:first-child {
+        border-top: none;
+      }
+
+      .deleteIcon {
+        cursor: pointer;
+        width: rem-calc(14);
+        height: rem-calc(14);
+      }
+    }
+  }
+
+  .pagination {
+    display: flex;
+    gap: rem-calc(10);
+    margin: rem-calc(20) 0;
+
+    li {
+      border: 1px solid $black;
+      min-width: rem-calc(20);
+      height: rem-calc(20);
+      line-height: rem-calc(20);
+      text-align: center;
+    }
+  }
+}
